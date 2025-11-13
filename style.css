@@ -1,0 +1,91 @@
+body{
+    background-color: antiquewhite;
+    margin: 0; /*removes the space on the edges, makes the elements touch the borders*/
+}
+header{
+    display: flex; /* places the entire list of elements horizontally*/
+    justify-content: space-between; /* makes sure the elements are aligned properly in their places and the info elements don't overlap with the logo */
+    align-items: center;
+    background-color: rgba(168, 109, 109, 0.5);
+    height: 100px;
+}
+ul{
+    /* list-style-type controls only the marker style (e.g roman numerals) while list-style sets list-style-type, list-style-position, and list-style-image all at once */
+    list-style-type: none; 
+    display: flex;
+}
+li a{
+    padding-right: 20px;
+    text-align: right;
+    margin-left: 10px; /*gives the space to the left of the elements, separating them*/
+    text-decoration: none;
+    color: rgb(132, 22, 22);            
+    transition: color 0.3s; 
+    font-size: 24px; 
+    font-weight:bold;  
+}
+li a:hover {
+    color: #fff;
+}
+.hero {
+    text-align: center;
+    min-height: 80vh; /* fills 80% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    color: white;
+  
+/* For the backgroumd image */
+ background: linear-gradient(
+    rgba(165, 101, 101, 0.5),
+    rgba(81, 55, 55, 0.5) 
+    ),
+    url('tello.jpg');
+    background-size: contain;
+    background-position: center; 
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+    text-shadow: 3px 3px 6px maroon;
+    margin-bottom: 10px; 
+}
+.tagline{
+    font-size: 30px;
+    color:#fff;
+    font-style: italic;
+    margin-top: 0;
+}
+button {
+    background-color: maroon;   /* maroon background */
+    color: white;               /* text color */
+    opacity: 0.9;               /* slightly opaque */
+    border: none;               /* remove default border */
+    border-radius: 20px;        /* rounded corners */
+    padding: 15px 40px;         /* large enough for CTA */
+    font-size: 1.2rem;          /* bigger text */
+    cursor: pointer;            /* pointer on hover */
+    transition: background-color 0.3s, opacity 0.3s;
+}
+.axn{
+    text-decoration: none;  
+    color: #fff;
+}
+button:hover {
+    background-color: #a83232; 
+    opacity: 1;               
+}
+footer {
+    background-color: #755353;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    width: 100%;  
+    box-sizing: border-box;
+    color: aliceblue;
+}
+.link{
+    text-decoration: none;
+    color: aliceblue;
+}
